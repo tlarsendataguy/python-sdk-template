@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html style="padding:20px">
+<head>
+  <meta charset="utf-8">
+  <title>Template</title>
+  <script type="text/javascript">
+    document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">');
+  </script>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend class='blueTitle'>XMSG("Template")</legend>
+      <div class=''>
+        <label>XMSG("Text Value Label:")</label>
+		<ayx data-ui-props="{type: 'TextBox'}" data-item-props="{dataName: 'TextValue', dataType: 'SimpleString'}"></ayx>
+        <label>XMSG("Numeric Field Label:")</label>
+		<ayx data-ui-props="{type: 'DropDown'}" data-item-props="{dataName: 'NumericField', dataType: 'FieldSelector', fieldType: 'numeric'}"></ayx>
+        <label>XMSG("Date Field Label:")</label>
+		<ayx data-ui-props="{type: 'DropDown'}" data-item-props="{dataName: 'DateField', dataType: 'FieldSelector', fieldType: 'date'}"></ayx>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
